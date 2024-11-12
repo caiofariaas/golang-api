@@ -65,6 +65,6 @@ func (r * UserRepository) CheckPassword(storedPassword, providedPassword string)
 	// Usa o método CompareHashAndPassword do pacote bcrypt para verificar as senhas.
 
 	err := bcrypt.CompareHashAndPassword([]byte(storedPassword), []byte(providedPassword))
-	
+	 
 	return err == nil
 }
