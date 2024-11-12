@@ -2,7 +2,7 @@ package models
 
 import "time"
 
-type Task struct {
+type Task struct { 
 	ID	int `json: "id" gorm:"primaryKey;autoIncrement"`
 	Title string `json:"title"`
 	Description string `json: "description"`
