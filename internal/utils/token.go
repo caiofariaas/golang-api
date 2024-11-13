@@ -18,7 +18,7 @@ func GenerateToken(userID int) (string, error){
 		UserID: userID,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(time.Hour * 24).Unix(), // Configurando a expiração do token em 24 horas"
-			Issuer: "todo-go",
+			Issuer: "golang-api",
 		},
 	}
 
