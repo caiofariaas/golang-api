@@ -57,7 +57,7 @@ func (r * UserRepository) DeleteUser(username string) (string, error) {
 
 	return "User deleted successfully", nil
 }
-
+						
 // Método para verificar se a senha fornecida é válida.
 // Compara a senha armazenada no banco (hash) com a senha fornecida.
 
